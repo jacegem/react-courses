@@ -117,6 +117,20 @@ In the next section we'll add our first model.
 
 ## Creating a Django model
 
+With the app in place it's time to create our firt model.
+
+A model is an object representing your table's data.
+
+Almost every web framework has the concept of models. Django makes no exception. A Django model may have one or more field: each filed is a column in you table. Before moving forward let's define our requirements for the lead application.
+
+First we need a Lead model.
+
+Since I'm collecting leads I can think of a Lead model make of the following fields:
+
+- a name
+- an email
+- a message
+
 
 
 
