@@ -79,6 +79,48 @@ If another project needs the same app I can install leads from the package manag
 
 I suggest reading [How to write reusable apps](https://docs.djangoproject.com/en/2.0/intro/reusable-apps/) and watching [DjangoCon 2008: Reusable Apps](https://www.youtube.com/watch?v=A-S0tqpPga4&feature=youtu.be) to learn about app best practices.
 
+To create a new application in Django you would run:
+
+```shell
+django-admin startapp app_name
+```
+
+To create the leads app move inside the project folder:
+
+```shell
+cd project
+```
+
+and initalize the app:
+
+```shell
+django-admin startapp leads
+```
+
+Open up `./project/settings.py` and add the app in INSTALLED_APPS:
+
+```python
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'leads', # add the leads app
+]
+```
+
+So far so good!
+
+In the next section we'll add our first model.
+
+## Creating a Django model
+
+
+
+
+
 
 
 
